@@ -11,34 +11,24 @@
       <object class="GtkBox">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
         <property name="orientation">vertical</property>
         <child>
           <object class="GtkLabel" id="letterDisplay">
+            <property name="name">letterDisplay</property>
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="xpad">150</property>
-            <property name="ypad">50</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="xpad">250</property>
+            <property name="ypad">100</property>
             <property name="label" translatable="yes">letter display</property>
-            <attributes>
-              <attribute name="size" value="20000"/>
-            </attributes>
           </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">True</property>
             <property name="position">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="lbl">
-            <property name="visible">True</property>
-            <property name="can_focus">False</property>
-            <property name="label" translatable="yes">label</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-            <property name="fill">True</property>
-            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -63,6 +53,10 @@
               <object class="GtkLabel" id="lblTotLetter">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_left">5</property>
+                <property name="margin_right">5</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
                 <property name="label" translatable="yes">shown letter</property>
               </object>
               <packing>
@@ -75,6 +69,10 @@
               <object class="GtkLabel" id="lblRightLetter">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_left">5</property>
+                <property name="margin_right">5</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
                 <property name="label" translatable="yes">right letter</property>
               </object>
               <packing>
@@ -87,6 +85,10 @@
               <object class="GtkLabel" id="lblAllTypedLetter">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
+                <property name="margin_left">5</property>
+                <property name="margin_right">5</property>
+                <property name="margin_top">5</property>
+                <property name="margin_bottom">5</property>
                 <property name="label" translatable="yes">all letter</property>
               </object>
               <packing>
