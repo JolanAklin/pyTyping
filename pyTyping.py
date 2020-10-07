@@ -11,7 +11,7 @@ rightLetter = 0
 allTypedLetter = 0
 
 #this function is called when a letter is entered in the textbox. It's verifying if the letter is right or wrong
-def text_inserted(label):
+def text_inserted(arg):
     letterDisplay.set_name("letterDisplay")
     tbx = builder.get_object('tbx')
     tbxText=tbx.get_text()
@@ -19,7 +19,6 @@ def text_inserted(label):
         global allTypedLetter
         allTypedLetter += 1
         lblAllTypedLetter.set_text('all typed letter: ' + str(allTypedLetter))
-        label.set_text(tbx.get_text())
         tbx.set_text("")
         if(tbxText == randLetter):
             letterDisplay.set_name("letterDisplayRight")
@@ -63,6 +62,9 @@ builder.add_from_file('testui.glade')
 
 window = builder.get_object('main_window')
 window.connect('delete-event', Gtk.main_quit)
+
+global resultWindow
+resultWindow = builder.get_object('result_window')
 
 #defining globally the text counter
 global lblTotLetter
