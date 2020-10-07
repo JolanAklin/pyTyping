@@ -1,0 +1,25 @@
+#letterDisplay {
+    background-color: rgba(0, 0, 0, 0);
+    font: 99px sans;
+}
+#letterDisplayError {
+    animation-name: changeColorError;
+    animation-duration: 1s;
+    font: 99px sans;
+}
+#letterDisplayRight {
+    animation-name: changeColorRight;
+    animation-duration: 1s;
+    font: 99px sans;
+}
+
+@keyframes changeColorError {
+    0%   {background-color: transparent;}
+    25%  {background-color: red;}
+    100% {background-color: transparent;}
+}
+@keyframes changeColorRight {
+    0%   {background-color: transparent;}
+    25%  {background-color: green;}
+    100% {background-color: transparent;}
+}
